@@ -1,16 +1,17 @@
 import React from "react";
-import { CustomIcon } from "..";
+import { CustomIcon } from "../..";
 
-const PDFIcon: React.FC<BaseIconProps> = ({
+const VideoIcon: React.FC<BaseIconProps> = ({
   width,
   height,
-  fontFamily = "Roboto",
+  fontFamily = "Andale mono, AndaleMono, monospace",
 }) => {
   return (
     <CustomIcon
-      contentText="PDF"
+      contentText="VIDEO"
       globalStyle={{ width, height }}
       textColor="#FFFFFF"
+      fontSize="5px"
       cornerColor="#B53629"
       backgroundColor="#E2574C"
       fontFamily={fontFamily}
@@ -18,4 +19,4 @@ const PDFIcon: React.FC<BaseIconProps> = ({
   );
 };
 
-export default PDFIcon;
+export default VideoIcon;

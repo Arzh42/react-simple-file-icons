@@ -1,22 +1,22 @@
 import React from "react";
-import { CustomIcon } from "..";
+import { CustomIcon } from "../..";
 
-const DefaultIcon: React.FC<BaseIconProps> = ({
+const WEBMIcon: React.FC<BaseIconProps> = ({
   width,
   height,
   fontFamily = "Andale mono, AndaleMono, monospace",
 }) => {
   return (
     <CustomIcon
-      contentText="FILE"
+      contentText="WEBM"
       globalStyle={{ width, height }}
       textColor="#FFFFFF"
-      cornerColor="#376CFB"
-      backgroundColor="#4294FF"
+      cornerColor="#82D82E"
+      backgroundColor="#529E09"
+      fontSize="6px"
       fontFamily={fontFamily}
-      fontWeight="bold"
     />
   );
 };
 
-export default DefaultIcon;
+export default WEBMIcon;

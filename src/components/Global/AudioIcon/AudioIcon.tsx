@@ -1,22 +1,22 @@
 import React from "react";
-import { CustomIcon } from "..";
+import { CustomIcon } from "../..";
 
-const DefaultIcon: React.FC<BaseIconProps> = ({
+const AudioIcon: React.FC<BaseIconProps> = ({
   width,
   height,
   fontFamily = "Andale mono, AndaleMono, monospace",
 }) => {
   return (
     <CustomIcon
-      contentText="FILE"
+      contentText="AUDIO"
       globalStyle={{ width, height }}
       textColor="#FFFFFF"
-      cornerColor="#376CFB"
-      backgroundColor="#4294FF"
+      fontSize="5px"
+      cornerColor="#007daa"
+      backgroundColor="#00ACEC"
       fontFamily={fontFamily}
-      fontWeight="bold"
     />
   );
 };
 
-export default DefaultIcon;
+export default AudioIcon;

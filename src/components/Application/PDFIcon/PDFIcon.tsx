@@ -1,10 +1,10 @@
 import React from "react";
-import { CustomIcon } from "..";
+import { CustomIcon } from "../..";
 
-const WEBMIcon: React.FC<BaseIconProps> = ({
+const PDFIcon: React.FC<BaseIconProps> = ({
   width,
   height,
-  fontFamily = "Roboto",
+  fontFamily = "Andale mono, AndaleMono, monospace",
 }) => {
   return (
     <CustomIcon
@@ -18,4 +18,4 @@ const WEBMIcon: React.FC<BaseIconProps> = ({
   );
 };
 
-export default WEBMIcon;
+export default PDFIcon;

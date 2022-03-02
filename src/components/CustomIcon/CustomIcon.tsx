@@ -8,16 +8,21 @@ export interface CustomIconProps {
   fontWeight?: string;
   contentText?: string;
   cornerColor?: string;
+  fontSize?: string;
 }
 
 const CustomIcon = ({
-  globalStyle,
-  backgroundColor,
-  textColor,
-  fontFamily,
-  fontWeight,
-  contentText,
-  cornerColor,
+  globalStyle = {
+    width: 50,
+    height: 50,
+  },
+  backgroundColor = "black",
+  textColor = "white",
+  fontFamily = "Andale mono, AndaleMono, monospace",
+  fontSize = "8px",
+  fontWeight = "bold",
+  contentText = "FILE",
+  cornerColor = "blue",
 }: CustomIconProps) => {
   return (
     <svg style={globalStyle} viewBox="0 0 32 32">
@@ -29,7 +34,7 @@ const CustomIcon = ({
       <text
         fill={textColor}
         fontFamily={fontFamily}
-        fontSize="8px"
+        fontSize={fontSize}
         letterSpacing="0px"
         style={{
           fontFeatureSettings: "normal",
