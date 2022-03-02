@@ -1,5 +1,5 @@
 {
-  "name": "@arzh42/react-simple-file-icons",
+  "name": "react-simple-file-icons",
   "version": "0.0.2",
   "description": "A set of component to easily generate custom file format icons",
   "directories": {
@@ -14,10 +14,8 @@
     "format",
     "icons"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Arzh42"
-  },
   "author": "https://github.com/Arzh42",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
