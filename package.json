@@ -9,7 +9,8 @@
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build",
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified\"",
+    "release": "npm run rollup && np"
   },
   "keywords": [
     "react",
@@ -41,6 +42,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "gh-pages": "^3.2.3",
+    "np": "^7.6.0",
     "prettier": "^2.5.1",
     "rollup": "^2.68.0",
     "rollup-plugin-dts": "^4.1.0",
