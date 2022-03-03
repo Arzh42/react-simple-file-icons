@@ -13,8 +13,12 @@ import {
   AACIcon,
   JPGIcon,
   TXTIcon,
+  CSVIcon,
   OTFIcon,
+  XLSXIcon,
+  XLSIcon,
   FontIcon,
+  MP4Icon,
 } from ".";
 
 export default {
@@ -27,16 +31,13 @@ const Template: ComponentStory<typeof DefaultIcon> = (args) => (
     <div>
       <AppIcon {...args} />
       <PDFIcon {...args} />
+      <XLSIcon {...args} />
+      <XLSXIcon {...args} />
     </div>
 
     <div>
       <AudioIcon {...args} />
       <AACIcon {...args} />
-    </div>
-
-    <div>
-      <TextIcon {...args} />
-      <TXTIcon {...args} />
     </div>
 
     <div>
@@ -50,8 +51,15 @@ const Template: ComponentStory<typeof DefaultIcon> = (args) => (
     </div>
 
     <div>
+      <TextIcon {...args} />
+      <TXTIcon {...args} />
+      <CSVIcon {...args} />
+    </div>
+
+    <div>
       <VideoIcon {...args} />
       <WEBMIcon {...args} />
+      <MP4Icon {...args} />
     </div>
   </div>
 );

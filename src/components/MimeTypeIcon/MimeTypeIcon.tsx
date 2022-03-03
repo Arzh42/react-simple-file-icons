@@ -1,9 +1,10 @@
 import React from "react";
-import { PDFIcon } from "../Application";
+import { PDFIcon, XLSIcon, XLSXIcon } from "../Application";
 import { AACIcon } from "../Audio";
 import { OTFIcon } from "../Font";
 import { JPGIcon } from "../Image";
-import { WEBMIcon } from "../Video";
+import { CSVIcon, TXTIcon } from "../Text";
+import { WEBMIcon, MP4Icon } from "../Video";
 import {
   AppIcon,
   AudioIcon,
@@ -27,6 +28,10 @@ const MimeTypeIcon: React.FC<MimeTypeIconProps> = ({
   switch (mimeType) {
     case "application/pdf":
       return <PDFIcon width={width} height={height} fontFamily={fontFamily} />;
+    case "application/vnd.ms-excel":
+      return <XLSIcon width={width} height={height} fontFamily={fontFamily} />;
+    case "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":
+      return <XLSXIcon width={width} height={height} fontFamily={fontFamily} />;
     case "audio/aac":
       return <AACIcon width={width} height={height} fontFamily={fontFamily} />;
     case "audio/webm":
@@ -35,8 +40,14 @@ const MimeTypeIcon: React.FC<MimeTypeIconProps> = ({
       return <OTFIcon width={width} height={height} fontFamily={fontFamily} />;
     case "image/jpg":
       return <JPGIcon width={width} height={height} fontFamily={fontFamily} />;
+    case "text/txt":
+      return <TXTIcon width={width} height={height} fontFamily={fontFamily} />;
+    case "text/csv":
+      return <CSVIcon width={width} height={height} fontFamily={fontFamily} />;
     case "video/webm":
       return <WEBMIcon width={width} height={height} fontFamily={fontFamily} />;
+    case "video/mp4":
+      return <MP4Icon width={width} height={height} fontFamily={fontFamily} />;
     default:
       switch (mimeType.split("/")[0]) {
         case "application":
