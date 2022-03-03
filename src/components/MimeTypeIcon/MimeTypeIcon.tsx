@@ -1,18 +1,18 @@
 import React from "react";
+import { PDFIcon } from "../Application";
+import { AACIcon } from "../Audio";
+import { OTFIcon } from "../Font";
+import { JPGIcon } from "../Image";
+import { WEBMIcon } from "../Video";
 import {
-  AudioIcon,
-  VideoIcon,
-  DefaultIcon,
-  PDFIcon,
-  WEBMIcon,
-  TextIcon,
   AppIcon,
+  AudioIcon,
   FontIcon,
   ImageIcon,
-  AACIcon,
-  JPGIcon,
-} from "..";
-import OTFIcon from "../Font/OTFIcon";
+  TextIcon,
+  VideoIcon,
+} from "../Global";
+import DefaultIcon from "../DefaultIcon";
 
 type MimeTypeIconProps = BaseIconProps & {
   mimeType: string;

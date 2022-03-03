@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomIcon } from "../..";
+import CustomIcon from "../../CustomIcon";
 
 const AudioIcon: React.FC<BaseIconProps> = ({
   width,

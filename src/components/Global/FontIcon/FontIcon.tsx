@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomIcon } from "../..";
+import CustomIcon from "../../CustomIcon";
 
 const FontIcon: React.FC<BaseIconProps> = ({
   width,
