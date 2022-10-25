@@ -12,8 +12,8 @@ const CSVIcon: React.FC<BaseIconProps> = ({
       globalStyle={{ width, height }}
       textColor="#FFFFFF"
       fontSize="8px"
-      cornerColor="#21A366"
-      backgroundColor="#185C37"
+      cornerColor="#EEEEEE"
+      backgroundColor="#21A366"
       fontFamily={fontFamily}
     />
   );
